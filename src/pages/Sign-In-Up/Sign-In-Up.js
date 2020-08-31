@@ -3,10 +3,12 @@ import React from "react";
 import "./Sign-In-Up.scss";
 
 import SignIn from "../../components/SignIn/SignIn";
+import SignUp from "../../components/SignUp/SignUp";
 
 const SignInAndSignUpPage = () => (
-  <div className="sing-in-and-sign-up">
+  <div className="sign-in-and-sign-up">
     <SignIn />
+    <SignUp />
   </div>
 );
 
