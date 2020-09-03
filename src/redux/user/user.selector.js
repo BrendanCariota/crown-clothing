@@ -1,5 +1,5 @@
 import { createSelector } from "reselect";
-import { StaticRouter } from "react-router-dom";
+//import { StaticRouter } from "react-router-dom";
 
 const selectUser = (state) => state.user;
 

@@ -13,7 +13,7 @@ import SignInAndSignUpPage from "./pages/Sign-In-Up/Sign-In-Up";
 import { auth, createUserProfileDocument } from "./firebase/firebase.utils";
 import { setCurrentUser } from "./redux/user/users.actions";
 import { selectCurrentUser } from "./redux/user/user.selector";
-import { selectCartItems } from "./redux/cart/cart.selectors";
+//import { selectCartItems } from "./redux/cart/cart.selectors";
 
 class App extends React.Component {
   unsubscribeFromAuth = null;
@@ -47,7 +47,7 @@ class App extends React.Component {
         <Header />
         <Switch>
           <Route exact path="/" component={Homepage} />
-          <Route exact path="/shop" component={ShopPage} />
+          <Route path="/shop" component={ShopPage} />
           <Route
             exact
             path="/signin"
